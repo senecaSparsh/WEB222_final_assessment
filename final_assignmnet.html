@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="w3-theme-black.css" />
+    <link rel="stylesheet" href="w3.css" />
+    
+
+    <title>WEB222 - Final Assessment</title>
+    <script src="mysite.js"></script>
+</head>
+
+<body>
+    <div class="mainBlock">
+        <div class="content">
+            <div class="header">
+                <h1><b>WEB222 - Final Assessment</b></h1>
+                <p>by Sparsh Agarwal</p>
+                <p>ID - 133513200</p>
+            </div>
+    
+            <div class="navbar">
+                <a href="#home"><u><i>Home</i></u></a>
+                <a href="#education"><u><i>Education</i></u></a>
+                <a href="#about"><u><i>About Me</i></u></a>
+                <a href="#contact"><u><i>Contact</i></u></a>
+    
+            </div>
+    
+            <div class="Block1">
+                <div class="imageBlock">
+                    <img src="file:///C:/Users/spars/Downloads/Sparsh%20Agarwal%20(@sparsh_agarwal1.0)%20%E2%80%A2%20Instagram%20photos%20and%20videos_files/196530608_211216410840038_7957193842380291201_n.jpg" alt="Monch" class="image" />
+                </div>
+                <h1>Sparsh Agarwal</h1>
+                <h2>Computer Programming And Analysis</h2>
+                <button type="button" onclick="resume()" class="resumeButton">
+                    <i class="fa-resume fa fa-download"></i> Resume
+                </button>
+    
+                <a href="#contact"><input type="button" value="Contact Me" class="contactMeButton"></a>
+    
+                <p id="resume"></p>
+    
+            </div>
+    
+            <div class="aboutBlock">
+                <div class="row">
+                    <div class="column" style="background-color:whitesmoke">
+                        <h2 id="about">About Me</h2>
+                        <p>Strong problem solving and analytical skills, 
+                            Proficient communication skills, Time Management, 
+                            Leadership qualities, never quit attitude are some 
+                            skills which I possess and I feel that these skills 
+                            would be a good fit for this amazing opportunity at
+                             your esteemed organization </p>
+                    </div>
+                    <div class="w3-responsive w3-card-4">
+                        <table class="w3-table w3-striped w3-bordered">
+                        <thead>
+                        <tr class="w3-theme">
+                          <th colspan="2">Basic Information</th>
+                      
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>AGE:</td>
+                          <td>19</td>
+                         
+                        </tr>
+                        <tr class="w3-white">
+                          <td>EMAIL:</td>
+                          <td>sagarwal9@myseneca.ca
+                        </td>
+                        
+                        </tr>
+                        <tr>
+                          <td>LANGUAGE:	</td>
+                          <td>English, Hindi</td>
+                        
+                        </tr>
+                        </tbody>
+                        </table>
+                        </div>
+                </div>
+            </div>
+    
+            <div class="educationBlock">
+                <h2 id="education">Education</h2>
+                <div class="row">
+                    <div class="columnc3 left" style="background-color: green">
+                        <h2><u><b>2018 - 2020</b></u></h2>
+                        <p>High School</p>
+                    </div>
+                    <div class="columnc3 right" style="background-color: whitesmoke">
+                        <h2>Physics, Chemistry and Maths</h2>
+                        <p>Delhi Public School</p>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="columnc3 left" style="background-color: green">
+                        <h2>2021 - 2023</h2>
+                        <p>Computer Programming and Analysis</p>
+                    </div>
+                    <div class="columnc3 right" style="background-color: whitesmoke">
+                        <h2>Bachelor's Degree</h2>
+                        <p>Seneca College</p>
+                    </div>
+                </div>
+    
+                <br />
+                <div class="row">
+                    <div class="columnc3 left" style="background-color: green">
+                        <h2>2017</h2>
+                        <p>Secondary High School</p>
+                    </div>
+                    <div class="columnc3 right" style="background-color:whitesmoke">
+                        <h2>Physics, Chemistry and Maths</h2>
+                        <p>Delhi Public School</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="Block4" id="contact">
+    
+                <div class="formBlock">
+    
+                    <form id="form1" name="form1" action="https://httpbin.org/post" method="POST"
+                        onsubmit="return validateTextarea();">
+                    
+                            <h2>Contact Me</h2>
+    
+                            <label for="name">Name: </label>
+                            <input id="name" type="text" name="Name" placeholder="Please enter your name..." required />
+    
+                            <label for="email">Email Address: </label>
+                            <input id="email" type="email" name="Email" placeholder="Please enter your email address..."
+                                required />
+    
+                            <label for="address">Address:</label>
+                            <input id="address" type="text" name="address" placeholder="Please enter your address..."
+                                required />
+    
+                                <label for="city">City</label>
+
+                                <input list="city" type="text" name="city" placeholder="Please select your city..." required />
+                        <datalist id="city" > 
+                                <option value="Toronto"></option>
+                                <option value="Montreal"></option>
+                                <option value="Ottawa"></option>
+                                <option value="Calgary"></option>
+                                <option value="Edmonton"></option>
+                                <option value="Vancouver"></option>
+                                <option value="Winnipeg"></option>                                
+                                <option value="Brampton"></option>
+                                <option value="Other"></option>
+                            </datalist>
+    
+                            <label for="postalCode">Postal Code:</label>
+                            <input id="postalCode" type="text" name="postalCode" required
+                                placeholder="Type your Postal Code using the format A1A 1A1, where A is a letter and 1 is a digit."
+                                pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$">
+    
+                            <label for="textarea">Anything in your mind?</label><br><br>
+    
+                            <input id="question" type="radio" name="enquiry" value="question" onclick="hiringValidation();">
+                            <label for="question">Question</label>
+    
+                            <input id="comment" type="radio" name="enquiry" value="comment" onclick="hiringValidation();">
+                            <label for="comment">Comment</label>
+    
+                            <input id="hiring" type="radio" name="enquiry" value="hiring" onclick="hiringValidation();">
+                            <label for="hiring">Hiring</label><br>
+    
+                            <textarea id="textareaspace" name="enquiry" class="textarea"></textarea>
+    
+                            <div id="hiring_form" style="display: none;">
+                                <label>Hourly Charge: </label> <input type="number" name="hourly" required>
+                            </div>
+    
+                            <input type="submit" value="Submit Information">
+                            <input type="reset" value="Reset" id="reset">
+                        
+                    </form>
+    
+                </div>
+            </div>
+            <div class="mediaBlock">
+                <h2>Here is my social</h2>
+
+                <a href="https://www.linkedin.com/learning/me?trk=aff_src.aff-lilpar_c.partners_pkw.123201_plc.adgoal%20GmbH_pcrid.449670_learning&u=2169170" target="_blank" class="fa-media fa fa-linkedin">
+                </a>
+                <a href="https://github.com/senecaSparsh" target="_blank" class="fa-media fa">
+                    <img src="github.png" style="margin: -10px;" alt="github">
+                </a>
+                <a href="https://my.indeed.com/p/sparsha-5jmktu4" target="_blank" class="fa-media fa fa-skype">
+                </a>
+            </div>
+    
+            <div class="Block6">
+    
+                <footer>
+                    <p>&copy; 2021 Sparsh Agarwal</p>
+                </footer>
+    
+            </div>
+        </div>
+
+        </div>
+        
+
+</body>
+
+</html>
